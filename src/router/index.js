@@ -15,10 +15,12 @@ import DataBindingClass2 from '../views/DataBindingClass2.vue'
 import DataBindingStyle from '../views/DataBindingStyle.vue'
 import DataBindingStyle2 from '../views/DataBindingStyle2.vue'
 import DataBindingList from '../views/DataBindingList.vue'
+import DataBindingList2 from '../views/DataBindingList2.vue'
 import RenderingVIf from '../views/RenderingVIf.vue'
 import EventClick from '../views/EventClick.vue'
 import EventChange from '../views/EventChange.vue'
 import Watch from '../views/Watch.vue'
+import Nested from '../views/NestedComponent.vue'
 
 const routes = [
   {
@@ -110,6 +112,11 @@ const routes = [
     component: DataBindingList
   },
   {
+    path: '/databindinglist2',
+    name: 'DataBindingList2',
+    component: DataBindingList2
+  },
+  {
     path: '/renderingvif',
     name: 'RenderingVIf',
     component: RenderingVIf
@@ -128,6 +135,11 @@ const routes = [
     path: '/watch',
     name: 'Watch',
     component: Watch
+  },
+  {
+    path: '/nested',
+    name: 'Nested',
+    component: Nested
   }
 ]
 
