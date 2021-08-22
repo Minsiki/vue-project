@@ -1,5 +1,12 @@
+const path = require('path');
+
 module.exports = {
-    chaneWebpack: config => {
-        config.plugins.delete('prefetch');
-    }
-}
+    configureWebpack: {
+      resolve: {
+        alias: {
+          "~": path.resolve("src"),
+        },
+        extensions: [".js", ".vue", ".json"],
+      },
+    },
+  };

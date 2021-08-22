@@ -1,7 +1,7 @@
 <template>
- <h1>
-     Hello, {{title}}!
- </h1>
+    <h1>
+        {{msg}}
+    </h1>
 </template>
 <script>
 export default {
@@ -9,7 +9,7 @@ export default {
     components: {}, 
     data() {
         return {
-            title: 'World'
+            msg: ''
         };
     },
     beforeCreate() {}, 

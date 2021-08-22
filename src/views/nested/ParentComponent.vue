@@ -1,22 +1,23 @@
 <template>
-    <div>
-        <PageTitle title="페이지 제목이란다."/>
-    </div>
+    <child-component @send-message="sendMessage" ref="child_component"/>
 </template>
 <script>
-import PageTitle from "../components/PageTitle.vue"
+import ChildComponent from '@/views/nested/ChildComponent.vue';
+
 export default {
     name: '', 
-    components: {PageTitle}, 
+    components: {ChildComponent}, 
     data() {
         return {
-            sampleData: ''
+            sampleData: '',
         };
     },
     beforeCreate() {}, 
     created() {}, 
     beforeMount() {}, 
-    mounted() {}, 
+    mounted() {
+        this.$refs.child_component.$refs.btn.click();
+    }, 
     beforeUpdate() {}, 
     updated() {}, 
     beforeUnMount() {}, 
