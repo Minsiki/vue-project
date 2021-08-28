@@ -4,7 +4,7 @@ module.exports = {
     configureWebpack: {
       resolve: {
         alias: {
-          "~": path.resolve("src"),
+          "@": path.resolve("src"),
         },
         extensions: [".js", ".vue", ".json"],
       },
