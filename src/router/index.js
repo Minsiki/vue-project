@@ -1,16 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/Home.vue'
+//import Home from '@/views/Home.vue'
 import Databinding from '@/views/databinding/Databinding.router.js'
 import NestRouter from '@/views/nested/Nested.router.js'
 import ModalRouter from "@/views/modal/modal.router.js"
 import Provide from '@/views/provide/provide.router.js'
 import Composition from '@/views/composition/Composition.router.js'
+import Vuex from '@/views/vuex/vuex.router.js'
+import KakaoLogin from '@/views/login/KakaoLogin.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'Login',
+    component: KakaoLogin
   }, {
     path: '/about',
     name: 'About',
@@ -23,7 +25,8 @@ const routes = [
   NestRouter,
   ModalRouter,
   Provide,
-  Composition
+  Composition,
+  Vuex
 ]
 
 const router = createRouter({
